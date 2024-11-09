@@ -1,6 +1,6 @@
 # Survival-XML-TME-BC
 
-This repository contains the code and data supporting the manuscript *Integrated multiomics analysis unveils how macrophages drive immune suppression in breast tumors and affect clinical outcomes*. This study investigates the role of immune-suppressive macrophages in breast tumors, integrating multiomics data such as RNA-seq deconvolution, cell-cell communication assays, imaging mass cytometry (IMC), and survival analysis. Follow the steps below to recreate the study’s results.
+This repository contains the code and data supporting the manuscript *Integrated multiomics analysis unveils how macrophages drive immune suppression in breast tumors and affect clinical outcomes*. This study investigates the role of immune-suppressive macrophages in breast tumors, integrating multiomics data such as bulk RNA-seq, scRNA-seq and imaging mass cytometry (IMC) data. Follow the steps below to recreate the study’s results.
 
 ## Overview of Analysis Steps
 

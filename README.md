@@ -51,11 +51,6 @@ IMC and single-cell RNA-seq data are analyzed with scripts available in their re
 - **results/**  
   Stores output files, such as cell fraction estimates, SHAP values, survival scores, and visualizations.
 
-## Requirements
-
-- **Python 3.x**: Libraries: `scikit-learn`, `lifelines`, `SHAP`
-- **R 4.x**: Libraries: `Seurat`, `NicheNet`, `proxy`, `survival`
-
 ## Data Access
 
 Data sources:
@@ -63,10 +58,9 @@ Data sources:
 - **Spatial omics data**:
   - Danenberg et al., 2022 (https://zenodo.org/record/5850952)
   - Wang et al., 2023 (https://zenodo.org/records/7990870)
-
-## License
-
-This project is licensed under the MIT License.
+- **scRNA-seq data**: 
+  - Wu et al, 2021 (https://singlecell.broadinstitute.org/single_cell/study/SCP1039/a-single-cell-and-spatially-resolved-atlas-of-human-breast-cancers)
+  - Bassez et al, 2021 (https://lambrechtslab.sites.vib.be/en/single-cell)
 
 ## Contact
 

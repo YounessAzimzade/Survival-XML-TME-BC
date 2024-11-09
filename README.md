@@ -43,13 +43,10 @@ IMC and single-cell RNA-seq data are analyzed with scripts available in their re
     - Fig 5d & e.R
       
   - **scRNA-seq**:  Transfers annotation, explores cell-frequency correlations and identifies macrophage-T cell interactions via NicheNet.
-  - - Annotation Transfer.R
+    - Annotation Transfer.R
     - Fig5 g & h.R
     - Fig5 h, i, j & K.R
     - Fig5 l, m, n, o.R
-
-- **results/**  
-  Stores output files, such as cell fraction estimates, SHAP values, survival scores, and visualizations.
 
 ## Data Access
 

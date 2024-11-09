@@ -5,16 +5,16 @@ This repository contains the code and data supporting the manuscript *Integrated
 ## Overview of Analysis Steps
 
 ### 1. Estimating Cell Fractions
-To estimate cell fractions for bulk RNA-seq profiles, use Signature Matrices available in our previous work (https://github.com/YounessAzimzade/XML-TME-NAC-BC). We recommend using **CIBERSORTx** for cell fraction estimation. Once fractions are estimated and clinical outcome data are retrieved, you should have datasets similar to `AllSamples.csv` for the NAC cohort and `MBRC.csv`/`TCGA.csv` for other cohorts.
+To estimate cell fractions for bulk RNA-seq profiles, use Signature Matrices available in our previous work (https://github.com/YounessAzimzade/XML-TME-NAC-BC). We recommend using **CIBERSORTx** for cell fraction estimation. Once fractions are estimated and clinical outcome data are retrieved, you should have datasets similar to `NAC.csv` for the NAC cohort and `MBRC.csv`/`TCGA.csv` for other cohorts.
 
 ### 2. Analyzing the Role of Cell Types in Clinical Outcomes
 Explore the influence of cell type frequencies on clinical outcomes using **Support Vector Machines (SSVM)** and **Random Survival Forests (RSF)**:
    - **SSVM.ipynb** and **RSF.ipynb**: Train models on cell fractions, clinical features, and outcomes to predict clinical outcomes.
-   - **SHAP analysis**: Feature importance is extracted using SHAP values, yielding SHAP datasets with processed feature columns.  
+   - **SHAP analysis**: Feature importance is extracted using SHAP values, yielding SHAP datasets with processed feature columns (done in SSVM.ipynb and RSF.ipynb)  
    - After SHAP analysis, **fig2.R** is used to calculate "Survival Scores."
 
 ### 3. Juxtaposing Survival and pCR Scores
-Once "Survival Scores" are calculated, these scores are compared with pathological complete response (pCR) scores in **fig3.R**.
+Once "Survival Scores" are calculated, these scores are compared with pathological complete response (pCR) scores (from https://github.com/YounessAzimzade/XML-TME-NAC-BC) in **fig3.R**.
 
 ### 4. Classical Survival Analysis
 For additional insights, run traditional survival analyses using scripts in the **Survival Analysis** folder.
@@ -29,11 +29,11 @@ IMC and single-cell RNA-seq data are analyzed with scripts available in their re
 
 - **scripts/**  
   Contains scripts for each stage of analysis:
-  - **deconvolution.py**: Estimates cell fractions using CIBERSORTx.
-  - **SSVM.ipynb** and **RSF.ipynb**: Trains models to predict clinical outcomes.
+  - **SSVM.ipynb** and **RSF.ipynb**: Trains models to predict clinical outcomes and SHAP values.
   - **fig2.R**: Calculates Survival Scores using SHAP values.
   - **fig3.R**: Compares Survival Scores and pCR scores.
-  - **spatial_omics.R**: Spatial analysis of cell phenotypes with cell-cell distance calculations.
+  - **IMC**:
+  - - Spatial analysis of cell phenotypes with cell-cell distance calculations (Calculate min distance macs vs all.R, Cell Type Fractions.R, Fig 4f.R, Fig 4g.R, Fig 5a.R, Fig 5c.R, Fig 5d & e.R
   - **nichenet_analysis.R**: Identifies macrophage-T cell interactions via NicheNet.
 
 - **results/**  

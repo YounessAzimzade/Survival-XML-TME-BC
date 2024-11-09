@@ -1,6 +1,6 @@
 # Survival-XML-TME-BC
 
-This repository contains the code and data supporting the manuscript *Integrated Multiomics Analysis of Immune Suppression in Breast Tumors and Clinical Outcomes*. This study investigates the role of immune-suppressive macrophages in breast tumors, integrating multiomics data such as RNA-seq deconvolution, cell-cell communication assays, imaging mass cytometry (IMC), and survival analysis. Follow the steps below to recreate the study’s results.
+This repository contains the code and data supporting the manuscript *Integrated multiomics analysis unveils how macrophages drive immune suppression in breast tumors and affect clinical outcomes*. This study investigates the role of immune-suppressive macrophages in breast tumors, integrating multiomics data such as RNA-seq deconvolution, cell-cell communication assays, imaging mass cytometry (IMC), and survival analysis. Follow the steps below to recreate the study’s results.
 
 ## Overview of Analysis Steps
 
@@ -8,7 +8,7 @@ This repository contains the code and data supporting the manuscript *Integrated
 To estimate cell fractions for bulk RNA-seq profiles, use the Signature Matrices available in our previous work: https://github.com/YounessAzimzade/XML-TME-NAC-BC. We recommend using **CIBERSORTx** for cell fraction estimation. After estimating fractions and retrieving clinical outcome data, you should have datasets similar to `NAC.csv` for the NAC cohort and `MBRC.csv`/`TCGA.csv` for other cohorts.
 
 ### 2. Analyzing the Role of Cell Types in Clinical Outcomes
-Explore the influence of cell type frequencies on clinical outcomes using **Support Vector Machines (SSVM)** and **Random Survival Forests (RSF)**:
+Explore the influence of cell type frequencies on clinical outcomes using **Survival Support Vector Machines (SSVM)** and **Random Survival Forests (RSF)**:
    - **SSVM.ipynb** and **RSF.ipynb**: Train models on cell fractions, clinical features, and outcomes to predict clinical outcomes.
    - **SHAP analysis**: Extract feature importance using SHAP values, yielding SHAP datasets with processed feature columns (performed in SSVM.ipynb and RSF.ipynb).  
    - After SHAP analysis, calculate "Survival Scores" using **fig2.R**.

@@ -33,8 +33,8 @@ IMC and single-cell RNA-seq data are analyzed with scripts available in their re
   - **fig2.R**: Calculates Survival Scores using SHAP values.
   - **fig3.R**: Compares Survival Scores and pCR scores.
   - **IMC**: Spatial analysis of cell phenotypes with cell-cell distance calculations
-  -- Calculate min distance macs vs all.R
-  -- Cell Type Fractions.R, Fig 4f.R, Fig 4g.R, Fig 5a.R, Fig 5c.R, Fig 5d & e.R
+  - - Calculate min distance macs vs all.R
+  - - Cell Type Fractions.R, Fig 4f.R, Fig 4g.R, Fig 5a.R, Fig 5c.R, Fig 5d & e.R
   - **nichenet_analysis.R**: Identifies macrophage-T cell interactions via NicheNet.
 
 - **results/**  

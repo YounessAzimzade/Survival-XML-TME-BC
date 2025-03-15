@@ -1,0 +1,22 @@
+# Requirements for this project
+#
+# Python 3.08 is assumed to be installed separately, e.g., via pyenv or system packages.
+pip>=25.0.1
+
+# scikit-learn and its dependencies
+scikit-learn==1.6.1
+numpy>=2.2.3
+scipy>=1.15.2
+joblib>=1.4.2
+threadpoolctl>=3.5.0
+
+# scikit-survival and its dependencies
+scikit-survival==0.24.0
+pandas>=2.2.3  # also used separately below
+ecos==2.0.14
+osqp==0.6.7.post3
+
+# Additional libraries
+pandas>=2.2.3
+matplotlib
+seaborn

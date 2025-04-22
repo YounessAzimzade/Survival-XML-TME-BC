@@ -27,12 +27,13 @@ Analyze IMC and single-cell RNA-seq data using scripts in their respective folde
 - **data/**  
   Includes files for cell fractions calculated using deconvolution (TCGA and MBRC), cell fractions from IMC data, distances calculated for macrophages and other cells in IMC samples as well as macrophages and T cells from scRNA-seq data and cell frequencies in scRNA-seq samples.
 
-- **scripts/**  
-  Contains scripts for each stage of analysis:
+- **ML/**  
+  Contains scripts for ML section of analysis:
   - **SSVM.ipynb** and **RSF.ipynb**: Train models to predict clinical outcomes and compute SHAP values.
   - **fig2.R**: Calculates Survival Scores from SHAP values.
   - **fig3.R**: Compares Survival Scores with pCR scores.
-  - **IMC**: Spatial analysis of cell phenotypes with cell-cell distance calculations.
+
+- **IMC**: Spatial analysis of cell phenotypes with cell-cell distance calculations.
     - Calculate min distance macs vs all.R
     - Cell Type Fractions.R
     - Fig 4f.R
@@ -41,6 +42,7 @@ Analyze IMC and single-cell RNA-seq data using scripts in their respective folde
     - Fig 5a.R
     - Fig 5c.R
     - Fig 5d & e.R
+
   - **scRNA-seq**: Analyzes cell-frequency correlations and macrophage-T cell interactions using NicheNet.
     - Annotation Transfer.R
     - Fig5 g & h.R

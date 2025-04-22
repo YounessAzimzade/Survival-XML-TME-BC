@@ -24,7 +24,7 @@ Analyze IMC and single-cell RNA-seq data using scripts in their respective folde
 
 ## Repository Structure
 
-- **data/**  
+- **data**  
   Includes files for cell fractions calculated using deconvolution (TCGA and MBRC), cell fractions from IMC data, distances calculated for macrophages and other cells in IMC samples as well as macrophages and T cells from scRNA-seq data and cell frequencies in scRNA-seq samples.
 
 - **ML**  

@@ -42,8 +42,13 @@ Analyze IMC and single-cell RNA-seq data using scripts in their respective folde
     - Fig 5a.R
     - Fig 5c.R
     - Fig 5d & e.R
+- **Survival Analysis**: Survival analysis results
+    - Fig 4c &d.R
+    - Fig 4i &j.R
+    - Fig 4l.R
+    - KM plots (Fig 4e).R 
 
-- **scRNA-seq**: Analyzes cell-frequency correlations and macrophage-T cell interactions using NicheNet.
+- **scRNA**: Analyzes cell-frequency correlations and macrophage-T cell interactions using NicheNet.
     - Annotation Transfer.R
     - Fig5 g & h.R
     - Fig5 h, i, j & k.R

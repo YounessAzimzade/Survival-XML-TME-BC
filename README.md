@@ -25,7 +25,7 @@ Analyze IMC and single-cell RNA-seq data using scripts in their respective folde
 ## Repository Structure
 
 - **data/**  
-  Includes links or files for bulk RNA-seq (TCGA and MBRC), single-cell RNA-seq, and immune profiling data.
+  Includes files for cell fractions calculated using deconvolution (TCGA and MBRC), cell fractions from IMC data, distances calculated for macrophages and macrophages and T cells from scRNA-seq data and cell frequencies in scRNA-seq samples.
 
 - **scripts/**  
   Contains scripts for each stage of analysis:

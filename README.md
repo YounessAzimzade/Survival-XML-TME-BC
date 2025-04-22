@@ -32,7 +32,6 @@ Analyze IMC and single-cell RNA-seq data using scripts in their respective folde
   - **SSVM.ipynb** and **RSF.ipynb**: Train models to predict clinical outcomes and compute SHAP values.
   - **fig2.R**: Calculates Survival Scores from SHAP values.
   - **fig3.R**: Compares Survival Scores with pCR scores.
-
 - **IMC**: Spatial analysis of cell phenotypes with cell-cell distance calculations.
     - Calculate min distance macs vs all.R
     - Cell Type Fractions.R
@@ -42,12 +41,11 @@ Analyze IMC and single-cell RNA-seq data using scripts in their respective folde
     - Fig 5a.R
     - Fig 5c.R
     - Fig 5d & e.R
-- **Survival Analysis**: Survival analysis results
+- **Survival Analysis**: Survival analysis results. 
     - Fig 4c &d.R
     - Fig 4i &j.R
     - Fig 4l.R
     - KM plots (Fig 4e).R 
-
 - **scRNA**: Analyzes cell-frequency correlations and macrophage-T cell interactions using NicheNet.
     - Annotation Transfer.R
     - Fig5 g & h.R
